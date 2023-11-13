@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #orderid {
+             position: absolute; 
+            top : 0px;
+            right : 20px;
+            display: none;
+        }
+
+        #inp{
+            display: flex;
+            margin-top: 60px;
+            font-size: 25px;
+            gap:20px;
+        }
+        button{
+            font-size: 25px;
+            background-color: rgb(67, 67, 223);
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 5px 20px;
+        }
+
+        img{
+            margin-top: 40px;
+            width: 300px;
+            height: 300px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="orderid">Order ID: <span id="orderval">XXX</span></h1>
+    <div  id="inp">
+        <div id="fooditems">
+        <input type="checkbox" id="burger" name="fooditem" value="burger">
+        <label for="burger">Burger</label>
+    </div>
+    <div>
+        <input type="checkbox" id="fries" name="fooditem" value="fries">
+        <label for="">Fries</label>
+    </div>
+    <div>
+        <input type="checkbox" id="drink" name="fooditem" value="drink">
+        <label for="">Drink</label>
+    </div>
+    </div>
+   <button id="order">Order</button>
+    <img  id="imgf" src="" alt="">
+   <script src="scripts.js"></script>
+</body>
+</html>
